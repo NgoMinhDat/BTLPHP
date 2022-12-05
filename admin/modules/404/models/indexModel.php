@@ -1,0 +1,16 @@
+<?php
+
+function get_list_users() {
+    // $result = db_fetch_array("SELECT * FROM `tbl_users`");
+    // return $result;
+    echo " load model  thanh cong";
+}
+
+function get_user_by_id($id) {
+    $item = db_fetch_row("SELECT * FROM `tbl_users` WHERE `user_id` = {$id}");
+    return $item;
+}
+
+function getAll(){
+	return db_fetch_array('select * from tbl_film');
+}
